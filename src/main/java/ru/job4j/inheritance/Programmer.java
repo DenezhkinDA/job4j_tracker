@@ -4,9 +4,6 @@ public class Programmer extends Engineer {
 
     private int experience;
 
-    public Programmer() {
-    }
-
     public Programmer(String name, String surname, String education, String birthday, String position, int experience) {
         super(name, surname, education, birthday, position);
         this.experience = experience;

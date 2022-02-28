@@ -8,9 +8,6 @@ public class Engineer extends Profession {
         return position;
     }
 
-    public Engineer() {
-    }
-
     public Engineer(String name, String surname, String education, String birthday, String position) {
         super(name, surname, education, birthday);
         this.position = position;
