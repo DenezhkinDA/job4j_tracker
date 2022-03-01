@@ -10,6 +10,13 @@ public class Profession {
 
     private String birthday;
 
+    public Profession(String name, String surname, String education, String birthday) {
+        this.name = name;
+        this.surname = surname;
+        this.education = education;
+        this.birthday = birthday;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,13 +46,6 @@ public class Profession {
     }
 
     public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-    public Profession(String name, String surname, String education, String birthday) {
-        this.name = name;
-        this.surname = surname;
-        this.education = education;
         this.birthday = birthday;
     }
 }
