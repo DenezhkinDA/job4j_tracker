@@ -4,7 +4,9 @@ import java.time.LocalDateTime;
 
 public class Item {
     private int id;
+
     private String name;
+
     private LocalDateTime created = LocalDateTime.now();
 
     public Item() {
@@ -37,20 +39,5 @@ public class Item {
 
     public LocalDateTime getCreated() {
         return created;
-    }
-
-    public void printInfo() {
-        System.out.println("Номер Id: " + id);
-        System.out.println("Наименование изделия: " + name);
-        System.out.println();
-    }
-
-    public static void main(String[] args) {
-        Item first = new Item();
-        Item second = new Item("Table");
-        Item third = new Item(155620, "Window");
-        first.printInfo();
-        second.printInfo();
-        third.printInfo();
     }
 }
