@@ -3,7 +3,6 @@ package ru.job4j.tracker;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
 public class Item {
     private int id;
 
@@ -15,11 +14,8 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", created=" + created.format(FORMATTER) +
-                '}';
+        return "Item{" + "id=" + id + ", name='" + name + '\''
+                + ", created=" + created.format(FORMATTER) + '}';
     }
 
     public Item() {
