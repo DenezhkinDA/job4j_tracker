@@ -13,10 +13,6 @@ public class Student {
     public static void main(String[] args) {
         Student petya = new Student();
         petya.music();
-        petya.music();
-        petya.music();
-        petya.song();
-        petya.song();
         petya.song();
     }
 }
