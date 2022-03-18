@@ -5,7 +5,7 @@ public class Fact {
         if (n < 0) {
             throw new IllegalArgumentException("N could not be less then 0");
         }
-        int rsl = -1;
+        int rsl = 1;
         for (int i = 2; i <= n; i++) {
             rsl *= i;
             System.out.println(rsl);
