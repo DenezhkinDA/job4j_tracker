@@ -13,8 +13,8 @@ public class FactTest {
     }
 
     @Test
-    public void whenN2thenMinus2() {
+    public void whenN2then2() {
         int rsl = Fact.calc(2);
-        assertThat(rsl, is(-2));
+        assertThat(rsl, is(2));
     }
 }
