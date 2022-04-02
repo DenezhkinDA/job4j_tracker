@@ -18,4 +18,15 @@ public class OrderConvertTest {
         HashMap<String, Order> map = OrderConvert.process(orders);
         assertThat(map.get("3sfe"), is(new Order("3sfe", "Dress")));
     }
+
+    @Test
+    public void whenDoubleOrder() {
+        List<Order> orders = new ArrayList<>();
+        orders.add(new Order("3sfe", "Dress"));
+        orders.add(new Order("3sfe", "Dress"));
+        orders.add(new Order("4sfe", "Dress"));
+        HashMap<String, Order> map = OrderConvert.process(orders);
+        assertThat(map.get("3sfe"), is(new Order("3sfe", "Dress")));
+        assertThat(map.size(), is(2));
+    }
 }
