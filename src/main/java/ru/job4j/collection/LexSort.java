@@ -10,10 +10,8 @@ public class LexSort implements Comparator<String> {
         int resultR = 0;
         String[] lineLeft = left.split("\\.");
         String[] lineRight = right.split("\\.");
-        String lineL = lineLeft[0];
-        String lineR = lineRight[0];
-        resultL = Integer.parseInt(lineL);
-        resultR = Integer.parseInt(lineR);
+        resultL = Integer.parseInt(lineLeft[0]);
+        resultR = Integer.parseInt(lineRight[0]);
         return Integer.compare(resultL, resultR);
     }
 }
