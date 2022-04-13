@@ -19,7 +19,7 @@ public class FunctionInterfaces {
             BiPredicate<Integer, String> biPred = (i, s) -> i % 2 == 0 || s.length() == 4;
             for (Integer i : map.keySet()) {
                 if (biPred.test(i, map.get(i))) {
-                    System.out.println("key: " + i + " value: " + map.get(i));
+                    System.out.println("key : " + i + " value: " + map.get(i));
                 }
             }
 
