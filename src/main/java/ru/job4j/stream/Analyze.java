@@ -42,7 +42,7 @@ public class Analyze {
                             .sum());
                 })
                 .max(Comparator.comparingDouble(Tuple::getScore))
-                .orElse(new Tuple("Empty", 0D));
+                .orElse(null);
     }
 
     public static Tuple bestSubject(Stream<Pupil> stream) {
